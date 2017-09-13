@@ -32,7 +32,8 @@ $(function () {
 		var videos = [], played = [];
 
 		var get_api_call = function (time, sort) {
-			return `https://www.reddit.com/r/InterdimensionalCable/search.json?q=site%3Ayoutube.com+OR+site%3Ayoutu.be&restrict_sr=on&sort=${sort}&t=${time}&limit=50`;
+			//return `https://www.reddit.com/r/InterdimensionalCable/search.json?q=site%3Ayoutube.com+OR+site%3Ayoutu.be&restrict_sr=on&sort=${sort}&t=${time}&limit=50`;
+			return `https://www.reddit.com/r/videos/search.json?q=site%3Ayoutube.com+OR+site%3Ayoutu.be&restrict_sr=on&sort=${sort}&t=${time}&limit=50`;
 		};
 
 		var add_youtube_url = function (reddit_post_data) {
